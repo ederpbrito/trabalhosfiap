@@ -2,6 +2,7 @@ package Atividade2;
 
 public class MainEquipamento {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Object objeto = new Object();
 		Tablet tablet = new Tablet();
@@ -15,11 +16,11 @@ public class MainEquipamento {
 		objeto = movel; //Conversão implícita, movel extende objeto.
 		equipamento=tablet2; //Conversão implícita, equipamento extende objeto.
 		equipamento=smartphone2; //Conversão implícita, smartphone2 extende equipamento.
-		smartphone=tablet;  //Conversão impossível, smartphone2 está no mesmo nível que tablet
-		smartphone2=tablet2; ////Conversão impossível, smartphone2 está no mesmo nível que tablet2
+		//smartphone=tablet;  //Conversão impossível, smartphone2 está no mesmo nível que tablet
+		//smartphone2=tablet2; ////Conversão impossível, smartphone2 está no mesmo nível que tablet2
 		equipamento = (Equipamento) tablet; //Conversão Explicita, tablet extend que equipamento
 		movel = (Movel) tablet; //Conversão Explicita, tablet extende movel
-		tablet = (EquipamentoEletronico) equipamento; //Conversão Impossível, tablet e equipamento não implementa EquipamentoEletronico
+		//tablet = (EquipamentoEletronico) equipamento; //Conversão Impossível, tablet e equipamento não implementa EquipamentoEletronico
 		
 
 	}
